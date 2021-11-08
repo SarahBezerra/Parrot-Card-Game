@@ -57,13 +57,14 @@ body {
 
      position: absolute;
 
-     display: none;
+     opacity: 0;
  }
 
  .carta.revelar_verso .img_verso{
-     display: inline;
+     opacity: 1;
  }
 
  .carta.revelar_verso .papagaio{
      display: none;
  }
+
