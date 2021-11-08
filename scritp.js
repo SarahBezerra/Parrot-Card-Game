@@ -23,22 +23,27 @@ function criarCartas(qtdd_cartas){
 
     for(let i=0; i<qtdd_cartas; i++){
         if((lista_id_cartas[i] === 1) || (lista_id_cartas[i] === 2)){
-            container_cartas.innerHTML += `<div class='carta carta${lista_id_cartas[i]}' data-identifier='card'><img class='papagaio' src='multimidia/front.png'><img class='pombo_black' src='multimidia/bobrossparrot.gif'></div>`;
+            container_cartas.innerHTML += `<div class="carta carta${lista_id_cartas[i]}" onclick ="mostrarverso(this)" data-identifier="card"><img class="papagaio" src="multimidia/front.png"><img class="img_verso" src="multimidia/bobrossparrot.gif"></div>`;
         }else if((lista_id_cartas[i] === 3) || (lista_id_cartas[i] === 4)){
-            container_cartas.innerHTML += `<div class='carta carta${lista_id_cartas[i]}' data-identifier='card'><img class='papagaio' src='multimidia/front.png'><img class='pombo_black' src='multimidia/explodyparrot.gif'></div>`;
+            container_cartas.innerHTML += `<div class="carta carta${lista_id_cartas[i]}" onclick ="mostrarverso(this)" data-identifier="card"><img class="papagaio" src="multimidia/front.png"><img class="img_verso" src="multimidia/explodyparrot.gif"></div>`;
         }else if((lista_id_cartas[i] === 5) || (lista_id_cartas[i] === 6)){
-            container_cartas.innerHTML += `<div class='carta carta${lista_id_cartas[i]}' data-identifier='card'><img class='papagaio' src='multimidia/front.png'><img class='pombo_black' src='multimidia/fiestaparrot.gif'></div>`;
+            container_cartas.innerHTML += `<div class="carta carta${lista_id_cartas[i]}" onclick ="mostrarverso(this)" data-identifier="card"><img class="papagaio" src="multimidia/front.png"><img class="img_verso" src="multimidia/fiestaparrot.gif"></div>`;
         }else if((lista_id_cartas[i] === 7) || (lista_id_cartas[i] === 8)){
-            container_cartas.innerHTML += `<div class='carta carta${lista_id_cartas[i]}' data-identifier='card'><img class='papagaio' src='multimidia/front.png'><img class='pombo_black' src='multimidia/metalparrot.gif'></div>`;
+            container_cartas.innerHTML += `<div class="carta carta${lista_id_cartas[i]}" onclick ="mostrarverso(this)" data-identifier="card"><img class="papagaio" src="multimidia/front.png"><img class="img_verso" src="multimidia/metalparrot.gif"></div>`;
         }else if((lista_id_cartas[i] === 9) || (lista_id_cartas[i] === 10)){
-            container_cartas.innerHTML += `<div class='carta carta${lista_id_cartas[i]}' data-identifier='card'><img class='papagaio' src='multimidia/front.png'><img class='pombo_black' src='multimidia/revertitparrot.gif'></div>`;
+            container_cartas.innerHTML += `<div class="carta carta${lista_id_cartas[i]}" onclick ="mostrarverso(this)" data-identifier="card"><img class="papagaio" src="multimidia/front.png"><img class="img_verso" src="multimidia/revertitparrot.gif"></div>`;
         }else if((lista_id_cartas[i] === 11) || (lista_id_cartas[i] === 12)){
-            container_cartas.innerHTML += `<div class='carta carta${lista_id_cartas[i]}' data-identifier='card'><img class='papagaio' src='multimidia/front.png'><img class='pombo_black' src='multimidia/tripletsparrot.gif'></div>`;
+            container_cartas.innerHTML += `<div class="carta carta${lista_id_cartas[i]}" onclick ="mostrarverso(this)" data-identifier="card"><img class="papagaio" src="multimidia/front.png"><img class="img_verso" src="multimidia/tripletsparrot.gif"></div>`;
         }else if((lista_id_cartas[i] === 13) || (lista_id_cartas[i] === 14)){
-            container_cartas.innerHTML += `<div class='carta carta${lista_id_cartas[i]}' data-identifier='card'><img class='papagaio' src='multimidia/front.png'><img class='pombo_black' src='multimidia/unicornparrot.gif'></div>`;
+            container_cartas.innerHTML += `<div class="carta carta${lista_id_cartas[i]}" onclick ="mostrarverso(this)" data-identifier="card"><img class="papagaio" src="multimidia/front.png"><img class="img_verso" src="multimidia/unicornparrot.gif"></div>`;
         }
     }    
     console.log(container_cartas)
+}
+
+function mostrarverso(carta){
+    carta.classList.add('revelar_verso')
+    console.log(carta)
 }
 
 function comparador() { 

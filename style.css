@@ -37,14 +37,33 @@ body {
      width: 117px;
      height: 146px;
      margin: 10px 10px;
+     border-radius: 5px;
 
      background-color: #A7E9AF;
 
      display: flex;
      justify-content: center;
      align-items: center;
+
+     position: relative;
  }
 
  .papagaio {
      width: 90px;
+ }
+
+ .img_verso {
+     width: 60px;
+
+     position: absolute;
+
+     display: none;
+ }
+
+ .carta.revelar_verso .img_verso{
+     display: inline;
+ }
+
+ .carta.revelar_verso .papagaio{
+     display: none;
  }
