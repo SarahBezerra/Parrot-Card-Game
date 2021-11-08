@@ -1,0 +1,36 @@
+body {
+    background: #eef9bf;
+
+    font-family: 'Righteous', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+ .titulo {
+     font-size: 56px;
+     color: #75B79E;
+     font-weight: 600;
+
+     margin: 40px 0;
+
+     display: flex;
+     justify-content: center;
+ }
+
+.corpo {
+     width: auto;
+     height: auto;
+     background-color: aqua;
+
+     display: flex;
+     justify-content: center;
+ }
+
+ .container_cartas {
+    width: 70%;
+    height: auto;
+
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+ }
