@@ -19,7 +19,6 @@ body {
 .corpo {
      width: auto;
      height: auto;
-     background-color: aqua;
 
      display: flex;
      justify-content: center;
@@ -27,10 +26,25 @@ body {
 
  .container_cartas {
     width: 70%;
-    height: auto;
+    height: 60px;
 
-    background-color: red;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+ }
+
+ .carta {
+     width: 117px;
+     height: 146px;
+     margin: 10px 10px;
+
+     background-color: #A7E9AF;
+
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .papagaio {
+     width: 90px;
  }

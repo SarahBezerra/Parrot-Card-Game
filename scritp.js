@@ -9,11 +9,25 @@ function numeroDeCartas(){
     }
 }
 
+let lista_cartas = [];
+
 function criarCartas(qtdd_cartas){
     const container_cartas = document.querySelector('.container_cartas')
 
-    for(let i=0; i<qtdd_cartas; i++){
-        container_cartas.innerHTML = "";
+    let lista_id_cartas = [];
+    for(let i=1; i<=qtdd_cartas; i++){
+        lista_id_cartas.push(i);
     }
-    
+
+    lista_id_cartas.sort(comparador);
+
+    for(let i=0; i<qtdd_cartas; i++){
+        container_cartas.innerHTML += `<div class='carta carta${lista_id_cartas[i]}' data-identifier='card'><img class='papagaio' src='multimidia/front.png'></div>`;
+    }    
+    console.log(container_cartas)
 }
+
+function comparador() { 
+	return Math.random() - 0.5; 
+}
+
