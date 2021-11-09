@@ -2,6 +2,7 @@
 
 ### Descrição
 <p> Jogo da Memória envolvendo aleatoriedade, efeitos de transição e responsividade </p>
+> Status do Projeto: Em desenvolvimento :warning:
 
 ### Requisitos
 - [X] Não utilizar nenhuma biblioteca para implementar este projeto
