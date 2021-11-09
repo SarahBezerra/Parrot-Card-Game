@@ -13,4 +13,4 @@
 - [X] Ao virar a segunda, se for igual a primeira, permanecer viradas para cima, se não for, voltar a posição inicial
 - [ ] Efeito 3D da carta virando
 - [ ] Deve haver um cronômetro mostrando quantos segundos demorou a partida
-- [X] Ao finalizar o jogo, um alert pergunta se deseja jogar outra partida, se sim, recomeçar
+- [ ] Ao finalizar o jogo, um alert pergunta se deseja jogar outra partida, se sim, recomeçar
