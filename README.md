@@ -1,7 +1,7 @@
 # Parrot-Card-Game
 
-## Descrção
-<p> Jogo da Memória envolvendo aleatoridade, efeitos e transição, responsividade</p>
+### Descrição
+<p> Jogo da Memória envolvendo aleatoriedade, efeitos de transição e responsividade </p>
 
 ### Requisitos
 - [X] Não utilizar nenhuma biblioteca para implementar este projeto
